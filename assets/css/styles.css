@@ -1,0 +1,388 @@
+/* Universal CSS */
+:root {
+  --azure: #0078d7;
+  --coral: #ff6b6b;
+  --dark-grey: #24272c;
+  --light-grey: #f5f5f5;
+  --netural-green: #4caf50;
+  --marigold-yellow: #fbe870;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--light-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+/* End of Universal CSS */
+
+/* Web nav CSS */
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding: 5px 20px;
+  background-color: var(--dark-grey);
+}
+
+a {
+  text-decoration: none;
+}
+
+#logo {
+  display: flex;
+  align-items: center;
+  color: var(--light-grey);
+}
+
+.navbar {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  justify-content: space-around;
+  height: 100%;
+}
+
+.navbar a {
+  color: var(--light-grey);
+}
+
+.navbar a:hover {
+  color: var(--marigold-yellow);
+}
+
+.navbar li {
+  padding: 10px;
+}
+
+.navbar li:hover {
+  transform: scale(0.9);
+}
+/* End of Web nav */
+
+/* Mobile nav CSS */
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer;
+}
+
+#hamburger-icon div {
+  margin: 5px 0;
+  width: 30px;
+  height: 3px;
+  background-color: white;
+}
+
+.open .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+  transform: rotate(-45deg) translate(-6px, 6px);
+}
+
+.open .bar2 {
+  opacity: 0;
+}
+
+.open .bar3 {
+  -webkit-transform: rotate(45deg) translate(-6px, -8px);
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+.mobile-nav {
+  display: none;
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  background-color: var(--dark-grey);
+}
+
+.open .mobile-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-nav li {
+  margin-bottom: 10px;
+  list-style-type: none;
+}
+
+.mobile-nav a {
+  color: var(--light-grey);
+}
+
+.mobile-nav a:hover {
+  color: var(--marigold-yellow);
+}
+/* End of Mobile nav CSS */
+/* End of Header CSS */
+
+/* Hero CSS */
+.banner {
+  position: relative;
+  height: 150px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url(/assets/images/bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#quote {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  width: 100%;
+  padding-right: 15px;
+  text-align: right;
+  color: var(--light-grey);
+  text-shadow: 2px 2px 2px var(--dark-grey);
+}
+/* End of Hero CSS */
+
+/* Main CSS */
+/* This is Layout */
+.page-wrapper {
+  margin: 20px 30px;
+}
+
+.page-section{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding: 0 0 30px 0;
+}
+
+.col-title {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 150px;
+  color: var(--azure);
+  border-right: 4px solid var(--coral) ;
+}
+
+.col-right {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  width: 80%;
+  margin: 10px;
+}
+
+/* About CSS */
+#Hello-text {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--netural-green)
+}
+
+#about .col-right{
+  text-align: left;
+}
+
+#avatar {
+  float: right;
+  margin: 0px 0px 0px 15px;
+}
+/* End of About CSS */
+
+/* Works CSS */
+#workGrid{
+  display: grid;
+  grid-template-rows: 240px 120px 120px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "horiseon horiseon"
+  "cheatsheet bootstrap"
+  "java graphic"
+  ;
+  width: 100%;
+  grid-gap: 5px;
+}
+
+#horiseon {
+  grid-area: horiseon;
+  background-image: url("/assets/images/horiseon.jpg");
+}
+
+#cheatsheet {
+  grid-area: cheatsheet;
+  background-image: url("/assets/images/cheatsheet.png");
+  
+}
+
+#bootstrap {
+  grid-area: bootstrap;
+  background-image: url("/assets/images/bootstrap.jpg");
+}
+
+#java {
+  grid-area: java;
+  background-image: url("/assets/images/java.jpg");
+}
+
+#graphic {
+  grid-area: graphic;
+  background-image: url("/assets/images/illustration2.jpg");
+}
+
+#horiseon,
+#cheatsheet,
+#graphic {
+  cursor: pointer;
+}
+/* For coming soon pages */
+#bootstrap,
+#java{
+  cursor: not-allowed;
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;  
+  display: grid;
+  align-items: center;
+}
+
+.workGridArea:hover{
+  border: 4px solid var(--marigold-yellow);
+  box-shadow: 0px 5px var(--marigold-yellow);
+  opacity: 0.7;
+}
+
+.heading {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px;
+  text-align: left;
+  color: white;
+  font-size: 16px;
+  width: fit-content;
+}
+/* End of Works CSS */
+
+/* Contact CSS*/
+.contactinfo{
+  display: flex;
+  align-self: stretch;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  list-style-type: none;
+  width: 100%;
+  font-size: 20px;
+}
+
+.contactinfo li {
+  display: block;
+  flex: 0 1 auto;
+  padding: 10px;
+}
+
+.contactinfo a {
+  color: var(--dark-grey);
+  text-decoration:none;
+}
+
+.contactinfo a:hover {
+  color: var(--netural-green);
+}
+/* End of Contact CSS*/
+
+/* For mobile display use */
+[class ^="col-"]{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh 10px*2;
+}
+/* End of Page CSS */
+
+
+/* Media */
+/* Moblie devices */
+@media only screen and (max-width: 768px) {
+  /* Nav */
+  header nav {
+    display: none;
+  }
+
+  #hamburger-icon {
+    display: block;
+    z-index: 2;
+  }
+  
+  /* Main layout */
+  .page-section{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .col-title{
+    flex-basis: 50%;
+    border-right: 0;
+    border-bottom: 4px solid var(--coral);
+  }
+  
+  [class ^="col-"]{
+    height: 50vh 5px*2;
+  }
+
+  /* About */
+  #about .col-right img{
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    z-index: 1;
+  }
+
+  #about .col-right{
+    text-align: center;
+  }
+
+  /* Works */
+  #workGrid{
+    display: grid;
+    grid-template-rows: 240px 120px 120px 120px 120px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "horiseon"
+    "cheatsheet"
+    "bootstrap"
+    "java" 
+    "graphic"
+    ;
+    width: 100%;
+    grid-gap: 5px;
+  }  
+  
+  /* Contact */
+  .contactinfo {
+    grid-template-columns: 1fr;
+  }
+}
+/* End of Media *

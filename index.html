@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/8044b1095e.js" crossorigin="anonymous"></script>
+  <title>Celia's portfolio</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <!-- main logo / nav -->
+  <header>
+    <h1 id="logo">Celia's portfolio</h1>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="https://docs.google.com/document/d/1FEclGa0I6B_NNCSMpuSYFX7u3anufbyi/edit?usp=drive_link&ouid=108742027704383904478&rtpof=true&sd=true" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- mobile nav -->
+    <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <ul class="mobile-nav">
+        <li>
+          <a href="#about">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+        <li>
+          <a href="">Resume</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- hero banner -->
+  <section class="banner">
+    <div id="quote">
+      <h2>Creating Digital Journeys</h2>
+    </div>
+  </section>
+
+  <main class="page-wrapper">
+    <!-- about me -->
+    <section id="about" class="page-section">
+      <div class="col-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="col-right">
+        <p>
+          <img src="assets/images/avatar.png" alt="avatar" width="250px" height="250px" id="avatar">
+          <span id="Hello-text">Hello! I'm Celia Chan.</span> A web developing student. Independent freelance graphic designer with 10+ years of experience in developing
+          digital and print designs for clients in a broad range of industries, including enterprise companies,
+          mid-businesses, NGOs and agencies. Full-time experience with illustrated original pictures and designed
+          promotional materials in the educational industry over 4 years. Motivated to learn, grow and excel in the
+          design and illustration field. Feel free to reach out at celiayych@gmail.com or DM on LinkedIn.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- portfolio container -->
+    <section id="work" class="page-section">
+      <div class="col-title">
+        <h2>Works</h2>
+      </div>
+
+      <div class="col-right">
+        <div id="workGrid">
+
+          <a href="https://github.com/celia103/Horiseon-Marketing" target="_blank" id="horiseon" class="workGridArea">          
+            <div class="heading">
+              <h3>Horiseon Marketing</h3>
+              <p>HTML CSS: Refactor</p>
+            </div>
+          </a>          
+          
+          <a href="https://github.com/celia103/CSS-Snippet-Cheatsheet" target="_blank" id="cheatsheet" class="workGridArea">
+            <div class="heading">           
+              <h3>CSS Snippet Cheat Sheet</h3>
+              <p>Learning CSS</p>
+            </div>
+          </a>
+
+          <a href="https://celia103.github.io/Temp/" target="_blank" id="bootstrap" class="workGridArea">
+            <div class="heading">
+              <h3>Code Bootstrap Portfolio</h3>
+              <p>Coming soon</p>
+            </div>
+          </a>
+
+          <a href="https://celia103.github.io/Temp/" target="_blank" id="java" class="workGridArea">
+            <div class="heading">
+              <h3>JavaScript</h3>
+              <p>Coming soon</p>
+            </div>
+          </a>
+
+          <a href="https://www.celiacyy.com/work" target="_blank" id="graphic" class="workGridArea">
+            <div class="heading">
+              <h3>Graphic design & illustration</h3>
+              <p>Past clients' projects</p>
+            </div>
+          </a>
+    </section>
+
+    <!-- contact -->
+    <section class="page-section contact" id="contact">
+      <div class="col-title">
+        <h2>Contact Me</h2>
+      </div>
+
+      <div class="col-right">
+        <ul class="contactinfo">
+          <li><a href="mailto:celiayych@gmail.com">
+              <i class="fa-solid fa-envelope">
+              </i>&nbsp; Email</a>
+          </li>
+          <li><a href="https://github.com/celia103" target="_blank">
+              <i class="fa-brands fa-github">
+              </i>&nbsp; GitHub</a> </li>
+          <li><a href="https://www.linkedin.com/in/celiacyy/" target="_blank">
+              <i class="fa-brands fa-linkedin">
+              </i>&nbsp; LinkedIn</a> </li>
+      </div>
+    </section>
+  </main>
+</body>
+
+<!-- For hamburger-icon -->
+<script src="index.js"></script>
+
+</html>
