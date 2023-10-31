@@ -29,3 +29,14 @@ Application Screenshot (Mobile):
 ## License
 
 MIT License
+
+## Self-study Reference
+
+- **For mobile menu (hamburger):**
+  https://dev.to/javascriptacademy/responsive-navigation-bar-with-mobile-menu-using-html-css-2hpd
+
+## Image Sources
+
+- **From Midjourney:** avatar.png
+- **From Freepik (with license):** bg.jpg(modifed),bootstrap.png, java.jpg
+- **My own work:** cheatsheet.png, horiseon.jpg, illustration2.jpg
