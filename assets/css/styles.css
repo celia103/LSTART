@@ -144,7 +144,7 @@ a {
   height: 150px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url(./LSTART/assets/images/bg.jpg);
+  background-image: url(../images/bg.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -223,28 +223,28 @@ a {
 
 #horiseon {
   grid-area: horiseon;
-  background-image: url("./LSTART/assets/images/horiseon.jpg");
+  background-image: url("../images/horiseon.jpg");
 }
 
 #cheatsheet {
   grid-area: cheatsheet;
-  background-image: url("./LSTART/assets/images/cheatsheet.png");
+  background-image: url("../images/cheatsheet.png");
   
 }
 
 #bootstrap {
   grid-area: bootstrap;
-  background-image: url("./LSTART/assets/images/bootstrap.jpg");
+  background-image: url("../images/bootstrap.jpg");
 }
 
 #java {
   grid-area: java;
-  background-image: url("./LSTART/assets/images/java.jpg");
+  background-image: url("../images/java.jpg");
 }
 
 #graphic {
   grid-area: graphic;
-  background-image: url("./LSTART/assets/images/illustration2.jpg");
+  background-image: url("../images/illustration2.jpg");
 }
 
 #horiseon,
